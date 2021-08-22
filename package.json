@@ -2,9 +2,10 @@
   "name": "nom-button-1",
   "version": "1.0.0",
   "description": "",
-  "main": "backend.js",
+  "main": "app/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss tailwind.css -o styles.css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/ameletto/nom-button/issues"
   },
-  "homepage": "https://github.com/ameletto/nom-button#readme"
+  "homepage": "https://github.com/ameletto/nom-button#readme",
+  "dependencies": {
+    "autoprefixer": "^10.3.2",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  }
 }
