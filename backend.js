@@ -54,6 +54,14 @@ function showPosition(position) {
   service.textSearch(request, callback);
 }
  
+function createMarker(placeresult) {
+  const marker = new google.maps.Marker({
+        position: placeresult.geometry.location,
+        title: placeresult.name,
+        map:map,
+    });
+}
+ 
 function callback(results, status) {
   if (status == google.maps.places.PlacesServiceStatus.OK) {
     var places = [];
@@ -68,9 +76,11 @@ function callback(results, status) {
   } else {
     randomNum = generateRandomInteger(results.length)
     window.randomLocation = places[randomNum];
+    createMarker(randomLocation); 
     returnRestaurant();
   }
 }
+ 
  
 function generateRandomInteger(max) {
     return Math.floor(Math.random() * max);
