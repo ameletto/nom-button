@@ -1,6 +1,15 @@
 /*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap');
+
+.border{
+    border: 1px solid black;
+}
+
+.raleway{
+    font-family: Raleway;
+}
 
 /*
 Document

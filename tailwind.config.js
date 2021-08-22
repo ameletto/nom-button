@@ -3,8 +3,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: theme => ({
-        'bg': "url('/img/bg.png')",
+      backgroundImage: (theme) => ({
+        'foods': "url('/public/bg.png')",
       })
     },
   },
